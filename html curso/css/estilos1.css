@@ -1,0 +1,118 @@
+header{
+    border: 0px outset #000;
+    text-align: center;
+}
+nav {
+    position: fixed;
+    height: 80px;
+    overflow: hidden;
+    top: 0;
+    display: flex;
+    align-items: center;
+    background-image: url(../imagenes/celeste\ metalico.jpg);
+    width: 100%;
+}
+body{
+    background-color: #E7FFFE;
+    margin: 10px 0px 0px 0px;
+    
+}
+
+.titulo{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    background-size: contain;
+    margin: 10px 50px 10px 200px;
+    float: left;
+    color: blanchedalmond;
+
+}
+.menu{
+    position: absolute;
+    right: 50px;
+}
+.menu a{
+    color: #333;
+    text-decoration: none;
+    font-weight: 700;
+    margin-left: 30px;
+    transition: color 1s;
+    text-transform: uppercase;
+}
+.menu a:hover{
+    color: #E85860;
+}
+h1{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 30px;
+    padding: 100px 10px 5px 170px;
+}
+table{
+    width: 80%;
+}
+.ca1{
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    padding: 2px 100px 2px 100px;
+
+}
+.cont{
+    font-size: 30px;
+    text-align: justify;
+    padding: 10px 20px 10px 20px;
+}
+h4{
+    padding: 10px 30px 10px 170px;
+}
+.ref{
+    font-size: 50px;
+}
+a:link{
+    color:blanchedalmond
+}
+a:visited{
+    color:goldenrod;
+}
+.btn {
+    display: none;
+    position: absolute;
+    right: 20px;
+}
+.btn:hover > span {
+    background-color: #E85860;
+}
+.btn span {
+    display:block;
+    margin: 6px;
+    width: 40px;
+    height: 3px;
+    background: #333;
+}
+@media only screen and (max-width: 800px){
+ 
+    nav {
+        overflow: visible;
+    }
+    .menu {
+        width: 100%;
+        right: 0;
+        top: 80px;
+        background: #f1f1f1E6;
+        overflow: hidden;
+        max-height: 0;
+    }
+    .menu a{
+        display: block;
+        text-align: center;
+        padding: 10px;
+        margin: 0;
+    }
+    .btn {
+        display: block;
+        cursor: pointer;
+    }
+    .show {
+        max-height: 500px;
+    }
+}
